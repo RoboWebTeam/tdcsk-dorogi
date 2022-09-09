@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Центр строительной комплектации</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Lato:400,700%7CPoppins:300,400,500,600,700"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container">
+          <div class="cssload-speeding-wheel"></div>
+        </div>
+        <p>Загрузка...</p>
+      </div>
+    </div>
+    <div class="page">
+      <!-- Header Default-->
+      <header class="section page-header">
+        <!-- RD Navbar-->
+        <form class="popup-1" id='popup' autocomplete="off" action='email.php' method='post' onsubmit="return alert('Заявка отправлена !');">
+          <div class="popup">
+            <h3 class="popup__title">ОБРАТНАЯ СВЯЗЬ</h3>
+            <div class='popup__content'>
+            <span class='popup__span'>КАК К ВАМ ОБРАЩАТЬСЯ ?</span>
+            <input name="login" type="text" class="popup__input" placeholder="Пример:Дмитрий" />
+            </div>
+            <div class='popup__content'>
+            <span class='popup__span'>ВАШ НОМЕР ТЕЛЕФОНА</span>
+            <input
+            name="phone"
+              class="popup__input tel"
+              placeholder="+7 (999) 999 9999"
+              required
+            />
+          </div>
+            <div class='popup__content'>
+            <span class='popup__span'>КОГДА МЫ МОЖЕМ ВАМ ПОЗВОНИТЬ ?</span>
+            <textarea
+            name="message"
+              name="message"
+              class="popup__input"
+              placeholder="Укажите время для звонка"
+            ></textarea>
+          </div>
+            <button type='submit' class="popup__button">ОСТАВИТЬ ЗАЯВКУ</button>
+            <button class="popup__button_close" id='close' type="button"></button>
+          </div>
+        </form>
+        <div class="rd-navbar-wrap">
+          <nav
+            class="rd-navbar rd-navbar-classic"
+            data-layout="rd-navbar-fixed"
+            data-sm-layout="rd-navbar-fixed"
+            data-md-layout="rd-navbar-fixed"
+            data-md-device-layout="rd-navbar-fixed"
+            data-lg-layout="rd-navbar-fixed"
+            data-lg-device-layout="rd-navbar-fixed"
+            data-xl-layout="rd-navbar-static"
+            data-xl-device-layout="rd-navbar-static"
+            data-lg-stick-up-offset="46px"
+            data-xl-stick-up-offset="46px"
+            data-xxl-stick-up-offset="46px"
+            data-lg-stick-up="true"
+            data-xl-stick-up="true"
+            data-xxl-stick-up="true"
+          >
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button
+                    class="rd-navbar-toggle"
+                    data-rd-navbar-toggle=".rd-navbar-nav-wrap"
+                  >
+                    <span></span>
+                  </button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand">
+                    <!--+logo--><a class="brand brand-logo" href=".html"
+                      ><img
+                        src="images/logo-big-282x141.png"
+                        alt=""
+                        width="282"
+                        height="141" /></a
+                    ><a class="brand brand-logo-stuck" href="#gl"
+                      ><img
+                        src="images/logo-default-115x62.png"
+                        alt=""
+                        width="115"
+                        height="62"
+                    /></a>
+                    <div class="rd-navbar-brand-triangle"></div>
+                  </div>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap">
+                    <!-- RD Navbar Nav-->
+                    <ul class="rd-navbar-nav rd-navbar-nav-left">
+                      <li class="rd-nav-item header-left">
+                        <a class="rd-nav-link" href="#gl">Главная</a>
+                      </li>
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="#napravl">Направления</a>
+                      </li>
+                      <!-- <ul class="rd-menu rd-navbar-dropdown">
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="construction.html">Construction</a></li>
+                        </ul> -->
+                      <!-- <li class="rd-nav-item"><a class="rd-nav-link" href="projects.html">Наши проекты</a> -->
+                      <!-- RD Navbar Dropdown-->
+                      <!-- <ul class="rd-menu rd-navbar-dropdown">
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-project.html">Single Project</a></li>
+                        </ul> -->
+                      <!-- </li> -->
+                    </ul>
+                    <ul class="rd-navbar-nav rd-navbar-nav-right">
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="#project">Наши проекты</a>
+                        <!-- RD Navbar Megamenu-->
+                        <!-- <ul class="rd-menu rd-navbar-megamenu">
+                          <li class="rd-megamenu-item">
+                            <h6 class="rd-megamenu-title">Pages 1</h6>
+                            <ul class="rd-megamenu-list">
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="careers.html">Careers</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="privacy-policy.html">Privacy policy</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="testimonials.html">Testimonials</a></li>
+                            </ul>
+                          </li>
+                          <li class="rd-megamenu-item">
+                            <h6 class="rd-megamenu-title">Pages 2</h6>
+                            <ul class="rd-megamenu-list">
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="404.html">404</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="our-history.html">Our History</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="our-team.html">Our Team</a></li>
+                            </ul>
+                          </li>
+                        </ul> -->
+                      </li>
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="#about-us">О нас</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- Get template now-->
+      <section
+        class="parallax-container section"
+        data-parallax-img="images/nav/Тайтл4.png"
+        id="gl"
+      >
+        <div class="parallax-content section-full-default context-dark">
+          <div class="section-full-default-item">
+            <div class="container">
+              <h1 class="gradient">ЦСК</h1>
+              <div
+                class="divider-vertical divider-vertical-secondary-light"
+              ></div>
+              <h4 style="color: white">центр строительной комплектации</h4>
+              <br />
+              <h5 style="color: white">
+                наша компания занимается занимается асфальтированием и ремонтом
+                дорог на любых объектах.
+                <br />
+                <!-- <br/>
+                имеется СРО на строительство дорог до 3 млрд рублей.
+                <br/> -->
+                <br />
+                Цены от 415 р/м2. Бесплатное озеленение территории при заказе от
+                100м2. Звоните!
+                <br />
+                8 (800) 555-25-97
+              </h5>
+              <span
+              id='open'
+                class="button button-less text-white"
+                style="
+                  background-image: linear-gradient(
+                    135deg,
+                    rgb(0, 0, 0),
+                    rgb(217, 9, 9) 70%,
+                    rgb(217, 9, 9)
+                  );
+                "
+                >Оставить заявку</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Different Layout-->
+      <section class="section section-lg bg-default text-center" id="napravl">
+        <div class="container">
+          <h3 class="heading-decoration">
+            <span>Наши основные направления в строительстве</span>
+          </h3>
+          <div
+            class="row row-30"
+            style="
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+              margin-bottom: 100px;
+              flex-wrap: wrap;
+            "
+          >
+            <!-- <div class="col-sm-6"><span class="demo-layout"><img src="images/landing-layout-01-568x465.png" alt="" width="568" height="465"/><span class="heading-4">Капитальное дорожное строительство, ремонт и осблуживание автодорог</span></span></div>
+            <div class="col-sm-6"><span class="demo-layout"><img src="images/landing-layout-02-568x465.png" alt="" width="568" height="465"/><span class="heading-4">Modern</span></span></div>
+            <div class="col-sm-6"><span class="demo-layout"><img src="images/landing-layout-03-568x465.png" alt="" width="568" height="465"/><span class="heading-4">Sidebar</span></span></div>
+            <div class="col-sm-6"><span class="demo-layout"><img src="images/landing-layout-04-568x465.png" alt="" width="568" height="465"/><span class="heading-4">Coming Soon</span></span</div> -->
+            <ul
+              style="
+                text-align: start;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 20px;
+              "
+            >
+              <li class="nav" style="width: 380px; height: 350px">
+                <img
+                  src="./images/nav/1.jpg"
+                  alt="#"
+                  style="width: 380px; height: 250px"
+                />
+                <p
+                  class="celebrity"
+                  style="
+                    margin-top: 0;
+                    font-weight: 300;
+                    font-size: 25px;
+                    line-height: 20px;
+                    color: black;
+                    padding: 10px;
+                    text-align: center;
+                  "
+                >
+                  Капитальное дорожное строительство, ремонт и осблуживание
+                  автодорог
+                </p>
+              </li>
+              <li class="nav" style="width: 380px; height: 350px">
+                <img
+                  src="./images/nav/2.jpg"
+                  alt="#"
+                  style="width: 380px; height: 250px"
+                />
+                <p
+                  class="celebrity"
+                  style="
+                    margin-top: 0;
+                    font-weight: 300;
+                    font-size: 25px;
+                    line-height: 20px;
+                    color: black;
+                    padding: 10px;
+                    text-align: center;
+                  "
+                >
+                  Строительство линейных объектов капитального строительства
+                </p>
+              </li>
+              <li class="nav" style="width: 380px; height: 350px">
+                <img
+                  src="./images/nav/3.jpg"
+                  alt="#"
+                  style="width: 380px; height: 250px"
+                />
+                <p
+                  class="celebrity"
+                  style="
+                    margin-top: 0;
+                    font-weight: 300;
+                    font-size: 25px;
+                    line-height: 20px;
+                    color: black;
+                    padding: 10px;
+                    text-align: center;
+                  "
+                >
+                  Выполнение работ по корректировке проектной документации
+                </p>
+              </li>
+            </ul>
+            <ul
+              style="
+                text-align: start;
+                display: flex;
+                justify-content: center;
+                margin-top: 100px;
+                flex-wrap: wrap;
+                gap: 20px;
+              "
+            >
+              <li class="nav" style="width: 380px; height: 350px">
+                <img
+                  src="./images/nav/4.jpeg"
+                  alt="#"
+                  style="width: 380px; height: 250px"
+                />
+                <p
+                  class="celebrity"
+                  style="
+                    margin-top: 0;
+                    font-weight: 300;
+                    font-size: 25px;
+                    line-height: 20px;
+                    color: black;
+                    padding: 10px;
+                    text-align: center;
+                  "
+                >
+                  Реконструкция канализационных очистных сооружений
+                </p>
+              </li>
+              <li class="nav" style="width: 380px; height: 350px">
+                <img
+                  src="./images/nav/5.jpg"
+                  alt="#"
+                  style="width: 380px; height: 250px"
+                />
+                <p
+                  class="celebrity"
+                  style="
+                    margin-top: 0;
+                    font-weight: 300;
+                    font-size: 25px;
+                    line-height: 20px;
+                    color: black;
+                    padding: 10px;
+                    text-align: center;
+                  "
+                >
+                  Строительство магистральных коллекторов дождевой канализации с
+                  очистными сооружениями
+                </p>
+              </li>
+              <li class="nav" style="width: 380px; height: 350px">
+                <img
+                  src="./images/nav/6.jpg"
+                  alt="#"
+                  style="width: 380px; height: 250px"
+                />
+                <p
+                  class="celebrity"
+                  style="
+                    margin-top: 0;
+                    font-weight: 300;
+                    font-size: 25px;
+                    line-height: 20px;
+                    color: black;
+                    padding: 10px;
+                    text-align: center;
+                  "
+                >
+                  Капитальный ремонт наружных сетей
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- What you get-->
+      <section
+        class="parallax-container section"
+        data-parallax-img="images/nav/Тайтл2.jpg"
+      >
+        <div
+          class="parallax-content section-lg parallax-dark context-dark text-center"
+        >
+          <div class="container">
+            <h3 class="heading-decoration heading-decoration-modern">
+              <span>Наши преимущества</span>
+            </h3>
+            <div
+              class="row row-30"
+              style="display: flex; justify-content: center"
+            >
+              <!-- <div class="col-md-6 col-lg-3">
+                <div class="box-features-hexagon">
+                  <div class="box-features-hexagon-icon"><span class="icon mercury-icon-mobile"></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="80" height="91" viewBox="0 0 80 91">
+                      <defs></defs>
+                      <path d="M40.000,89.999 L0.990,67.749 L0.990,23.249 L40.000,0.999 L79.010,23.249 L79.010,67.749 L40.000,89.999 Z"></path>
+                    </svg>
+                  </div>
+                  <h5>Надежность</h5>
+                  <p>Наша группа компаний успешно работает на строительном рынке РФ.</p>
+                </div>
+              </div> -->
+              <div class="col-md-6 col-lg-3">
+                <div class="box-features-hexagon">
+                  <div class="box-features-hexagon-icon">
+                    <span class="icon fl-bigmug-line-two316"></span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      preserveAspectRatio="xMidYMid"
+                      width="80"
+                      height="91"
+                      viewBox="0 0 80 91"
+                    >
+                      <defs></defs>
+                      <path
+                        d="M40.000,89.999 L0.990,67.749 L0.990,23.249 L40.000,0.999 L79.010,23.249 L79.010,67.749 L40.000,89.999 Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h5>Опыт</h5>
+                  <p>
+                    Торговый дом ЦСК обладает опытыом производства и
+                    проектирования широкого спектра работ.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="box-features-hexagon">
+                  <div class="box-features-hexagon-icon">
+                    <span class="icon fl-bigmug-line-square160"></span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      preserveAspectRatio="xMidYMid"
+                      width="80"
+                      height="91"
+                      viewBox="0 0 80 91"
+                    >
+                      <defs></defs>
+                      <path
+                        d="M40.000,89.999 L0.990,67.749 L0.990,23.249 L40.000,0.999 L79.010,23.249 L79.010,67.749 L40.000,89.999 Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h5>Качество</h5>
+                  <p>
+                    Мы имеем СРО до 3 млрд. руб, а так же лизенцию на
+                    проектно-изыскательные работы.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="box-features-hexagon">
+                  <div class="box-features-hexagon-icon">
+                    <span class="icon fl-bigmug-line-equalization3"></span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      preserveAspectRatio="xMidYMid"
+                      width="80"
+                      height="91"
+                      viewBox="0 0 80 91"
+                    >
+                      <defs></defs>
+                      <path
+                        d="M40.000,89.999 L0.990,67.749 L0.990,23.249 L40.000,0.999 L79.010,23.249 L79.010,67.749 L40.000,89.999 Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h5>Надежность</h5>
+                  <p>
+                    Наша группа компаний успешно работает на строительном рынке
+                    РФ.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio-->
+      <section class="section section-lg bg-default text-center" id="project">
+        <div class="container">
+          <h3 class="heading-decoration"><span>наши проекты</span></h3>
+          <div class="row row-30">
+            <div class="col-md-6 scale-pic">
+              <div class="demo-portfolio-box">
+                <img
+                  src="images/Безымянный.png"
+                  alt=""
+                  width="537"
+                  height="436"
+                />
+              </div>
+            </div>
+            <div class="col-md-6 scale-pic">
+              <div class="demo-portfolio-box">
+                <img
+                  src="images/Безымянный1.png"
+                  alt=""
+                  width="537"
+                  height="436"
+                />
+              </div>
+            </div>
+            <div class="col-md-6 scale-pic">
+              <div class="demo-portfolio-box">
+                <img
+                  src="images/Безымянный2.png"
+                  alt=""
+                  width="537"
+                  height="436"
+                />
+              </div>
+            </div>
+            <div class="col-md-6 scale-pic">
+              <div class="demo-portfolio-box">
+                <img
+                  src="images/Безымянный3.png"
+                  alt=""
+                  width="537"
+                  height="436"
+                />
+              </div>
+            </div>
+            <div class="col-md-6 scale-pic">
+              <div class="demo-portfolio-box">
+                <img
+                  src="images/Безымянный4.png"
+                  alt=""
+                  width="537"
+                  height="436"
+                />
+              </div>
+            </div>
+            <div class="col-md-6 scale-pic">
+              <div class="demo-portfolio-box">
+                <img
+                  src="images/Безымянный5.png"
+                  alt=""
+                  width="537"
+                  height="436"
+                />
+              </div>
+            </div>
+            <div class="col-md-6 scale-pic">
+              <div class="demo-portfolio-box">
+                <img
+                  src="images/Безымянный6.png"
+                  alt=""
+                  width="537"
+                  height="436"
+                />
+              </div>
+            </div>
+            <div class="col-md-6 scale-pic">
+              <div class="demo-portfolio-box">
+                <img
+                  src="images/Безымянный7.png"
+                  alt=""
+                  width="537"
+                  height="436"
+                />
+              </div>
+            </div>
+            <div class="col-md-6 scale-pic">
+              <div class="demo-portfolio-box">
+                <img
+                  src="images/Безымянный8.png"
+                  alt=""
+                  width="537"
+                  height="436"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section counters-->
+      <!-- <section class="parallax-container section box-counter-wrap-modern" data-parallax-img="images/bg-image-08-1920x777.jpg">
+        <div class="parallax-content section-md parallax-dark context-dark text-center">
+          <div class="container">
+            <div class="row row-30">
+              <div class="col-6 col-md-3">
+                
+                <article class="box-counter">
+                  <div class="box-counter-main"><span>10</span></div>
+                  <p class="box-counter-title">Years of experience</p>
+                </article>
+              </div>
+              <div class="col-6 col-md-3">
+                
+                <article class="box-counter">
+                  <div class="box-counter-main">
+                    <div class="counter counter-zero">04</div>
+                  </div>
+                  <p class="box-counter-title">Perfect layouts</p>
+                </article>
+              </div>
+              <div class="col-6 col-md-3">
+                
+                <article class="box-counter">
+                  <div class="box-counter-main">
+                    <div class="counter">26</div>
+                  </div>
+                  <p class="box-counter-title">Qualified specialists</p>
+                </article>
+              </div>
+              <div class="col-6 col-md-3">
+                
+                <article class="box-counter">
+                  <div class="box-counter-main">
+                    <div class="counter counter-plus">30</div>
+                  </div>
+                  <p class="box-counter-title">Psd files</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- Nice Bonus-->
+      <!-- <section class="section section-lg bg-default text-center">
+        <div class="container">
+          <h3 class="heading-decoration"><span>a nice bonus</span></h3>
+          <div class="row row-30">
+            <div class="col-lg-6">
+              <div class="banner">
+                <div class="banner-inner">
+                  <div class="banner-content banner-content-sm">
+                    <div class="banner-title">
+                      <h3>PSD and Images</h3>
+                    </div>
+                    <p>PSD and images are included! Save more than $35 on awesome premium images.</p>
+                  </div>
+                </div>
+                <div class="banner-image"><img src="images/brand-01-568x402.jpg" alt="" width="568" height="402"/>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="banner">
+                <div class="banner-inner">
+                  <div class="banner-content">
+                    <div class="banner-title">
+                      <h3>24/7 Support</h3>
+                    </div>
+                    <p>Our Support Service is always available 24 hours a day, 7 days a week to help you create your own business solution.</p>
+                  </div>
+                </div>
+                <div class="banner-image"><img src="images/brand-02-568x402.jpg" alt="" width="568" height="402"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- Get Template-->
+      <section class="section section-lg bg-gray-100 text-center">
+        <div class="container">
+          <div class="box-get-template">
+            <h3 class="text-uppercase">
+              Мы с радостью готовы сотрудничать с вами
+            </h3>
+            <p>
+              Активно работаем с физ. и юр. лицами, торговыми и бизнес-центрами,
+              банками, гипермаркетами, управляющими компаниями.
+            </p>
+            <span
+            id='open1'
+              class="button button-lesser text-white"
+              style="
+                background-image: linear-gradient(
+                  135deg,
+                  rgb(0, 0, 0),
+                  rgb(217, 9, 9) 70%,
+                  rgb(217, 9, 9)
+                );
+                border: 1px solid white;
+              "
+              >оставить заявку</span
+            >
+          </div>
+        </div>
+      </section>
+      <!-- Footer Classic-->
+      <footer
+        class="footer-classic context-dark parallax-container"
+        data-parallax-img="images/bg-image-01-1920x1100.jpg"
+        id="about-us"
+      >
+        <div class="parallax-content">
+          <div class="section-sm">
+            <div class="container">
+              <div
+                class="row row-30"
+                style="display: flex; justify-content: center"
+              >
+                <div class="col-sm-6 col-lg-3">
+                  <div class="footer-classic-item">
+                    <h4>Мы есть в соц. сетях</h4>
+                    <!-- <p>Наша группа компаний успешно работает на строительном рынке РФ.</p> -->
+                    <ul class="list-inline list-inline-xs list-inline-middle">
+                      <li>
+                        <a
+                          data-soc="instagram"
+                          class="icon-square rw__robosoc_edit fa-instagram"
+                          href="#"
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          data-soc="facebook"
+                          class="icon-square rw__robosoc_edit fa-facebook-f"
+                          href="#"
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          data-soc="vk"
+                          class="icon-square rw__robosoc_edit fa-vk"
+                          href="#"
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                  <div class="footer-classic-item">
+                    <h4>Часы работы</h4>
+                    <div class="list-terms">
+                      <dl>
+                        <dt>Ежедневно</dt>
+                        <dd>с 8:00 до 20:00</dd>
+                      </dl>
+                      <!-- <dl>
+                        <dt>Saturday:</dt>
+                        <dd>10am to 2pm</dd>
+                      </dl>
+                      <dl>
+                        <dt>Sunday:</dt>
+                        <dd>10am to 2pm</dd>
+                      </dl> -->
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="col-sm-6 col-lg-3">
+                  <div class="footer-classic-item">
+                    <h4>Quick links</h4>
+                    <ul class="list-link">
+                      <li><a href=".html">Home</a></li>
+                      <li><a href="careers.html">Careers</a></li>
+                      <li><a href="about-us.html">About Us</a></li>
+                      <li><a href="contact-us.html">Contact Us</a></li>
+                      <li><a href="projects.html">Projects</a></li>
+                      <li><a href="media.html">Media</a></li>
+                      <li><a href="services.html">Services</a></li>
+                    </ul>
+                  </div>
+                </div> -->
+                <div class="col-sm-6 col-lg-3">
+                  <div class="footer-classic-item">
+                    <h4>Контакты</h4>
+                    <ul class="list-contacts">
+                      <li class="centered">
+                        <span
+                          class="icon icon-lg icon mdi mdi-cellphone-android"
+                        ></span
+                        ><span class="link-phone">8 (495) 132-74-00</span>
+                      </li>
+                      <li class="centered">
+                        <span
+                          class="icon icon-lg icon mdi mdi-cellphone-android"
+                        ></span
+                        ><span class="link-phone">8 (800) 555-25-97</span>
+                      </li>
+                      <li class="centered">
+                        <span
+                          class="icon mdi mdi-sitemap"
+                        ></span
+                        ><a class="" href="https://tdcsk.com/">tdcsk.com</span>
+                      </li>
+                      <!-- <li><span class="icon icon-xl icon mdi mdi-map-marker"></span><span>Washington, USA 6036 Richmond hwy., Alexandria, VA, 2230</span></li> -->
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-classic-bottom">
+            <div class="container">
+              <p class="rights">
+                <span>Top Project</span> <span>&copy;&nbsp;</span
+                ><span class="copyright-year"></span><span>.&nbsp;</span
+                ><a href="privacy-policy.html">Privacy Policy</a><span>.</span
+                ><span>
+                  Design&nbsp;by&nbsp;<a href="https://zemez.io/"
+                    >Zemez</a
+                  ></span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      //Маска для ввода моб. телефона
+      window.addEventListener('DOMContentLoaded', function () {
+        [].forEach.call(document.querySelectorAll('.tel'), function (input) {
+          var keyCode;
+          function mask(event) {
+            event.keyCode && (keyCode = event.keyCode);
+            var pos = this.selectionStart;
+            if (pos < 3) event.preventDefault();
+            var matrix = '+7 (___) ___ ____',
+              i = 0,
+              def = matrix.replace(/\D/g, ''),
+              val = this.value.replace(/\D/g, ''),
+              new_value = matrix.replace(/[_\d]/g, function (a) {
+                return i < val.length ? val.charAt(i++) || def.charAt(i) : a;
+              });
+            i = new_value.indexOf('_');
+            if (i != -1) {
+              i < 5 && (i = 3);
+              new_value = new_value.slice(0, i);
+            }
+            var reg = matrix
+              .substr(0, this.value.length)
+              .replace(/_+/g, function (a) {
+                return '\\d{1,' + a.length + '}';
+              })
+              .replace(/[+()]/g, '\\$&');
+            reg = new RegExp('^' + reg + '$');
+            if (
+              !reg.test(this.value) ||
+              this.value.length < 5 ||
+              (keyCode > 47 && keyCode < 58)
+            )
+              this.value = new_value;
+            if (event.type == 'blur' && this.value.length < 5) this.value = '';
+          }
+
+          input.addEventListener('input', mask, false);
+          input.addEventListener('focus', mask, false);
+          input.addEventListener('blur', mask, false);
+          input.addEventListener('keydown', mask, false);
+        });
+      });
+      //Слушатель на открытие модалки
+      let x = document.getElementById('popup');
+      if (x.style.visibility == 'visible') {
+        document.getElementById('close').onclick =  function () {
+          x.style.visibility='hidden';
+        }
+      } else {
+        document.getElementById('close').onclick =  function() {
+          x.style.visibility='';
+        }
+      }
+
+      if (x.style.visibility == 'hidden') {
+        document.getElementById('open').onclick =  function () {
+          x.style.visibility='visible';
+          console.log('1')
+        }
+      } else {
+        document.getElementById('open').onclick =  function() {
+          x.style.visibility='visible';
+          console.log('2')
+        }
+      }
+
+      if (x.style.visibility == 'hidden') {
+        document.getElementById('open1').onclick =  function () {
+          x.style.visibility='visible';
+          console.log('1')
+        }
+      } else {
+        document.getElementById('open1').onclick =  function() {
+          x.style.visibility='visible';
+          console.log('2')
+        }
+      }
+    //   function visible () {
+    //   document.getElementById('close').onclick =  function() {
+    //     // document.getElementById('popup').classList.toggle("popup__close");
+    //     document.getElementById('popup').style.display='none';
+    //     let a = document.getElementById('popup').style.display;
+    //     console.log(a)
+    //   }
+    // }
+    // function hide () {
+    //   document.getElementById('open').onclick = function() {
+    //     // document.getElementById('popup').classList.toggle("popup__open");
+    //     document.getElementById('popup').style.display='flex';
+    //   }
+    // }
+
+    </script>
+  </body>
+</html>
